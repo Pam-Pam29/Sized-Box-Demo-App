@@ -51,4 +51,9 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
               style: TextStyle(fontSize: 16, color: Colors.grey[600]),
             ),
             SizedBox(height: 30),
+            Text(
+              'Simple Calculator Layout:',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            ),
+            SizedBox(height: 20),
 
