@@ -157,5 +157,48 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
               },
             ),
             SizedBox(height: 10),
+               Text('3. Child Property:'),
+            SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _child = null; // Empty SizedBox for spacing
+                    });
+                  },
+                  child: Text('Empty'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _child = Container(
+                        color: Colors.blue,
+                        child: Center(
+                          child: Text('Box', style: TextStyle(color: Colors.white, fontSize: 12))
+                        )
+                      );
+                    });
+                  },
+                  child: Text('Blue Box'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _child = Container(
+                        color: Colors.green,
+                        child: Center(
+                          child: Icon(Icons.star, color: Colors.white, size: 20)
+                        )
+                      );
+                    });
+                  },
+                  child: Text('Green Star'),
+                ),
+              ],
+            ),
+
+            SizedBox(height: 20),
                       
 
