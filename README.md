@@ -1,1 +1,0 @@
-# Sized-Box-Demo-App
