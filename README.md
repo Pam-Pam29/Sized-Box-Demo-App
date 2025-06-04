@@ -33,4 +33,5 @@ Purpose: The widget to display inside the SizedBox constraints
 Use Case: When null, creates pure spacing; when provided, constrains the child widget to specific dimensions
 
 Demo Screenshot
+..\images\Screenshot 2025-06-04 174908.png
 
