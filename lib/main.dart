@@ -35,7 +35,7 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
         title: Text('SizedBox Widget Demo'),
         backgroundColor: Colors.blue,
       ),
-        body: SingleChildScrollView(
+      body: SingleChildScrollView(
         padding: EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,28 +51,16 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
               style: TextStyle(fontSize: 16, color: Colors.grey[600]),
             ),
             SizedBox(height: 30),
+
+            // Simple Calculator Demo Section
             Text(
               'Simple Calculator Layout:',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
             ),
             SizedBox(height: 20),
-               Center(
-              child: Column(
-                children: [
-                  Container(
-                    width: 200,
-                    height: 60,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      border: Border.all(color: Colors.grey),
-                    ),
-                    child: Center(
-                      child: Text('123', style: TextStyle(fontSize: 24)),
-                    ),
-                  ),
-                  
-                  SizedBox(height: 20),
-                        Center(
+            
+            // Calculator buttons with SizedBox spacing
+            Center(
               child: Column(
                 children: [
                   // Display area
@@ -91,6 +79,7 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
                   // Space between display and buttons
                   SizedBox(height: 20),
                   
+                  // Button row with SizedBox spacing
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -100,7 +89,9 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
                         color: Colors.blue,
                         child: Center(child: Text('7', style: TextStyle(color: Colors.white, fontSize: 18))),
                       ),
-                          Container(
+                      
+                      // This is our demo SizedBox creating space between buttons
+                      Container(
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.red, width: 2),
                         ),
@@ -129,7 +120,9 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
             ),
             SizedBox(height: 15),
-             Text('1. Width Property: ${_width.toInt()}px'),
+
+            // Width Control
+            Text('1. Width Property: ${_width.toInt()}px'),
             Slider(
               value: _width,
               min: 10.0,
@@ -143,7 +136,9 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
               },
             ),
             SizedBox(height: 5),
-             Text('2. Height Property: ${_height.toInt()}px'),
+
+            // Height Control
+            Text('2. Height Property: ${_height.toInt()}px'),
             Slider(
               value: _height,
               min: 10.0,
@@ -157,7 +152,9 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
               },
             ),
             SizedBox(height: 10),
-               Text('3. Child Property:'),
+
+            // Child Control
+            Text('3. Child Property:'),
             SizedBox(height: 8),
             Wrap(
               spacing: 8,
@@ -200,7 +197,8 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
             ),
 
             SizedBox(height: 20),
-             // Explanation
+
+            // Explanation
             Container(
               padding: EdgeInsets.all(12),
               decoration: BoxDecoration(
