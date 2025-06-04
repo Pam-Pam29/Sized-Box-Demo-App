@@ -72,4 +72,33 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
                   ),
                   
                   SizedBox(height: 20),
+                        Center(
+              child: Column(
+                children: [
+                  // Display area
+                  Container(
+                    width: 200,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      border: Border.all(color: Colors.grey),
+                    ),
+                    child: Center(
+                      child: Text('123', style: TextStyle(fontSize: 24)),
+                    ),
+                  ),
+                  
+                  // Space between display and buttons
+                  SizedBox(height: 20),
+                  
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 50,
+                        height: 50,
+                        color: Colors.blue,
+                        child: Center(child: Text('7', style: TextStyle(color: Colors.white, fontSize: 18))),
+                      ),
+                      
 
