@@ -56,4 +56,20 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
             ),
             SizedBox(height: 20),
+               Center(
+              child: Column(
+                children: [
+                  Container(
+                    width: 200,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      border: Border.all(color: Colors.grey),
+                    ),
+                    child: Center(
+                      child: Text('123', style: TextStyle(fontSize: 24)),
+                    ),
+                  ),
+                  
+                  SizedBox(height: 20),
 
