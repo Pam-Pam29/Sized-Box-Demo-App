@@ -143,5 +143,19 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
               },
             ),
             SizedBox(height: 5),
+             Text('2. Height Property: ${_height.toInt()}px'),
+            Slider(
+              value: _height,
+              min: 10.0,
+              max: 100.0,
+              divisions: 9,
+              label: _height.round().toString(),
+              onChanged: (double value) {
+                setState(() {
+                  _height = value;
+                });
+              },
+            ),
+            SizedBox(height: 10),
                       
 
