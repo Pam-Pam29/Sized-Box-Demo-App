@@ -200,5 +200,33 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
             ),
 
             SizedBox(height: 20),
+             // Explanation
+            Container(
+              padding: EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.grey[100],
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Why use SizedBox?',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                  SizedBox(height: 6),
+                  Text('• Add space between calculator buttons'),
+                  Text('• Make buttons the same size'),
+                  Text('• Create gaps in form layouts'),
+                  Text('• Space out list items evenly'),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
                       
 
