@@ -100,5 +100,34 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
                         color: Colors.blue,
                         child: Center(child: Text('7', style: TextStyle(color: Colors.white, fontSize: 18))),
                       ),
+                          Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.red, width: 2),
+                        ),
+                        child: SizedBox(
+                          width: _width,
+                          height: _height,
+                          child: _child,
+                        ),
+                      ),
+                      
+                      Container(
+                        width: 50,
+                        height: 50,
+                        color: Colors.blue,
+                        child: Center(child: Text('8', style: TextStyle(color: Colors.white, fontSize: 18))),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            
+            // Controls Section
+            Text(
+              'Adjust Properties:',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            ),
+            SizedBox(height: 15),
                       
 
