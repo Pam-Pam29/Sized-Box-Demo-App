@@ -129,5 +129,19 @@ class _SizedBoxDemoState extends State<SizedBoxDemo> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
             ),
             SizedBox(height: 15),
+             Text('1. Width Property: ${_width.toInt()}px'),
+            Slider(
+              value: _width,
+              min: 10.0,
+              max: 150.0,
+              divisions: 14,
+              label: _width.round().toString(),
+              onChanged: (double value) {
+                setState(() {
+                  _width = value;
+                });
+              },
+            ),
+            SizedBox(height: 5),
                       
 
