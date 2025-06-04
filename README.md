@@ -31,3 +31,6 @@ Use Case: Adding vertical spacing between form sections or creating uniform butt
 Default: null (creates invisible spacing box)
 Purpose: The widget to display inside the SizedBox constraints
 Use Case: When null, creates pure spacing; when provided, constrains the child widget to specific dimensions
+
+Demo Screenshot
+
